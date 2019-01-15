@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <ul>
-      <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/chartjs">vue-chartjs</router-link></li>
     </ul>
     <h1>Demo examples of vue-chartjs</h1>

@@ -14,9 +14,24 @@ export default {
           data: [],
           // グラフの色指定
           backgroundColor: [
-            'rgba(255, 100, 130, 0.2)',
-            'rgba(100, 130, 255, 0.2)',
-            'rgba(100, 250, 255, 0.2)',
+            'rgba(255, 255, 229, 1)',
+            'rgba(247, 252, 185, 1)',
+            'rgba(217, 240, 163, 1)',
+            'rgba(173, 221, 142, 1)',
+            'rgba(120, 198, 121, 1)',
+            'rgba(65, 171, 93, 1)',
+            'rgba(0, 104, 55, 1)',
+            'rgba(35, 132, 67, 1)',
+            'rgba(0, 69, 41, 1)',
+            'rgba(255, 255, 229, 0.5)',
+            'rgba(247, 252, 185, 0.5)',
+            'rgba(217, 240, 163, 0.5)',
+            'rgba(173, 221, 142, 0.5)',
+            'rgba(120, 198, 121, 0.5)',
+            'rgba(65, 171, 93, 0.5)',
+            'rgba(0, 104, 55, 0.5)',
+            'rgba(35, 132, 67, 0.5)',
+            'rgba(0, 69, 41, 0.5)',
           ],
           // グラフのボーダー指定
           borderWidth: 0,
@@ -28,6 +43,7 @@ export default {
           display: true,
           text: '藩と人口',
         },
+        // tooltipテキスト表示モード
         tooltips: {
           mode: 'index',
         },
@@ -58,8 +74,8 @@ export default {
   },
   created() {
     // データを渡す
-    this.pieChartData.datasets[0].data = [20, 1000, 1000];
-    this.pieChartData.labels = ['長州', '薩摩', '江戸幕府'];
+    this.pieChartData.datasets[0].data = [20, 1000, 1000, 500, 100];
+    this.pieChartData.labels = ['長州', '薩摩', '江戸幕府', '新幕府', '旧幕府'];
   },
   watch: {
     data() {
