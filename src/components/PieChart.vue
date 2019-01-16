@@ -37,6 +37,7 @@ export default {
           borderWidth: 0,
         }],
       },
+      // optionは指定しなくても動く
       options: {
         // グラフタイトルの指定 defaultで表示
         title: {
@@ -73,7 +74,7 @@ export default {
     };
   },
   created() {
-    // データを渡す
+    // ここでAPIを叩いてデータを渡していいかも
     this.pieChartData.datasets[0].data = [20, 1000, 1000, 500, 100];
     this.pieChartData.labels = ['長州', '薩摩', '江戸幕府', '新幕府', '旧幕府'];
   },
